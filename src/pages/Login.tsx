@@ -14,8 +14,6 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const token = localStorage.getItem("token");
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");

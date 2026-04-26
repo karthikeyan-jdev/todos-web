@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-  import { useEffect } from "react";
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -16,8 +15,12 @@ const Profile = () => {
       <div className="bg-white p-6 rounded-lg shadow-md w-80 text-center">
         <h1 className="text-2xl font-bold mb-4">Profile</h1>
 
-        <p className="mb-2"><strong>Name:</strong> {user.name}</p>
-        <p className="mb-4"><strong>Email:</strong> {user.email}</p>
+        <p className="mb-2">
+          <strong>Name:</strong> {user.name}
+        </p>
+        <p className="mb-4">
+          <strong>Email:</strong> {user.email}
+        </p>
 
         <button
           onClick={handleLogout}
