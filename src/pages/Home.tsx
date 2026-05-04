@@ -120,6 +120,7 @@ const Home = () => {
         ),
       );
       setMessage("Item updated successfully");
+      
       setTimeout(() => setMessage(""), 3000);
       setEditId(null);
     } catch (error) {
