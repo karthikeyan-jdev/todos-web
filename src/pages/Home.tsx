@@ -38,7 +38,7 @@ const Home = () => {
 
       const newTodo = await ApiFetcher({
         method: "POST",
-        url: `${apiUrl}todos`,
+        url: `${apiUrl}/api/todos`,
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
@@ -64,7 +64,7 @@ const Home = () => {
       setLoading(true);
 
       ApiFetcher({
-        url: `${apiUrl}todos`,
+        url: `${apiUrl}/api/todos`,
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -98,7 +98,7 @@ const Home = () => {
     }
     setLoading(true);
     try {
-      const res = await fetch(`${apiUrl}todos/${id}`, {
+      const res = await fetch(`${apiUrl}/api/todos/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -145,7 +145,7 @@ const Home = () => {
     }
     setLoading(true);
     try {
-      const res = await fetch(`${apiUrl}todos/${id}`, {
+      const res = await fetch(`${apiUrl}/api/todos/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

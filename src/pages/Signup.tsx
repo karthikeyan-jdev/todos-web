@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 const API_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:8000/api/todos";
+  import.meta.env.VITE_API_URL;
 
 const Signup = () => {
   const [username, setUsername] = useState<string>("");
@@ -28,7 +28,7 @@ const Signup = () => {
     }
     setLoading(true);
     try {
-      const res = await fetch(`${API_URL}auth/signup`, {
+      const res = await fetch(`${API_URL}/api/auth/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: username, email, password }),
