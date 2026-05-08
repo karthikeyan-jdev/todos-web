@@ -210,24 +210,24 @@ const Home = () => {
           </div>
           {/* form */}
           <form onSubmit={handleSubmit}>
-            <div className="flex justify-center items-center gap-8">
+            <div className="flex justify-center items-center gap-2.5 sm:gap-8">
               <input
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                className="bg-gray-100 rounded-xl placeholder:p-2 outline-0 h-10 w-40 md:w-50 pl-2"
+                className="bg-gray-100 rounded-xl placeholder:p-2 outline-0 h-10 w-32 sm:w-40 md:w-50 pl-2"
                 placeholder="title"
               />
               <input
                 type="text"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
-                className="bg-gray-100 rounded-xl placeholder:p-2 outline-0 h-10  w-40 md:w-50 pl-2"
+                className="bg-gray-100 rounded-xl placeholder:p-2 outline-0 h-10 w-32 sm:w-40 md:w-50 pl-2"
                 placeholder="description"
               />
               <button
                 type="submit"
-                className="border hover:border-gray-400 rounded-xl px-4 h-8 text-gray-200 bg-amber-500"
+                className="border hover:border-gray-400 rounded-xl px-4 h-8 text-gray-200 bg-amber-500 ml-1"
               >
                 submit
               </button>
