@@ -12,7 +12,7 @@ const Home = () => {
   const [description, setDescription] = useState<string>("");
   const [todos, setTodos] = useState<Todo[]>([]);
   const [message, setMessage] = useState<string>("");
-  const apiUrl = import.meta.env.VITE_API_URL;
+  const apiUrl = "https://todos-api-drab.vercel.app";
   const [error, setError] = useState<string>("");
   const [editId, setEditId] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
